@@ -1,0 +1,780 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 390px;
+    margin: 0 auto;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background: #FFFFFF;
+}
+
+/* HEADER */
+
+
+/* HEADER */
+.header {
+    position: relative;
+    z-index: 1000;
+
+    width: 390px;
+    height: 81px;
+    background: #FFFFFFE5;
+    border-bottom: 1px solid #BFC7D14D;
+    box-shadow: 0px 1px 2px 0px #0000000D;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.header-container {
+    width: 390px;
+    height: 80px;
+    max-width: 1536px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 149.33px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+    color: #023E8A;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 39.2px;
+    letter-spacing: -0.7px;
+    text-decoration: none;
+}
+
+.menu-button {
+    width: 22.5px;
+    height: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+
+    transform: translateX(0);
+}
+
+.menu-button svg {
+    width: 22.5px;
+    height: 15px;
+    flex-shrink: 0;
+}
+
+/* HEADER NAVIGATION */
+.header-nav {
+    display: none;
+    width: 358px;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav a {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #023E8A;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.header-nav .header-book-btn {
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: #E9C46A;
+    color: #773E00;
+}
+
+/* MENU OPEN */
+.header.menu-open .logo {
+    display: none;
+}
+
+.header.menu-open .header-nav {
+    display: flex;
+}
+
+.header.menu-open .menu-button {
+    display: none;
+}
+
+
+/* MAIN CONTENT */
+
+.main-content {
+    width: 390px;
+    height: 3756px;
+}
+
+/* HERO SECTION */
+
+.hero {
+    position: relative;
+    width: 390px;
+    height: 780px;
+    min-height: 600px;
+    padding-top: 180px;
+    opacity: 1;
+    overflow: hidden;
+}
+
+/* HERO BACKGROUND IMAGE */
+
+.hero-background {
+    position: absolute;
+    inset: 0;
+    width: 390px;
+    height: 780px;
+
+    background-image: url("imges/bg-img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* HERO GRADIENT */
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    width: 390px;
+    height: 780px;
+
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.2) 50%,
+        #F8F9FA 100%
+    );
+}
+
+/* HERO CONTENT CONTAINER */
+
+.hero-container {
+    position: relative;
+    z-index: 1;
+
+    width: 390px;
+    height: 335.19px;
+    max-width: 896px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* HERO HEADING CONTAINER */
+
+
+.hero-heading-container {
+    width: 358px;
+    height: 202px;
+    padding-bottom: 24px;
+
+    display: flex;
+    justify-content: center;
+
+    transform: translateY(80px);
+}
+
+.hero-heading {
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    vertical-align: middle;
+    color: #FFFFFF;
+    transform: translate(0.9px,2px);
+}
+
+
+/* HERO DESCRIPTION CONTAINER */
+
+.hero-description-container {
+    width: 358px;
+    height: 115.19px;
+    max-width: 672px;
+}
+
+/* HERO DESCRIPTION TEXT */
+
+.hero-description {
+    position: relative;
+
+    width: 334.83px;
+    height: 116px;
+
+    top: -1.3px;
+    left: 11.58px;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28.8px;
+    letter-spacing: 0px;
+    text-align: center;
+
+    color: #FFFFFFE5;
+}
+/* HERO BOOK NOW BUTTON */
+
+.hero-button-container {
+    width: 358px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.hero-book-btn {
+    width: 184.81px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    background-color: #0077B6;
+    color: #FFFFFF;
+
+    border-radius: 50px;
+    border: none;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+.hero-book-btn:hover {
+    background-color: #005D90;
+}
+
+.hero-book-btn span {
+    font-size: 22px;
+    line-height: 1;
+}
+
+
+/* DESTINATION SECTION */
+
+.destination-section {
+    width: 390px;
+    height: 2340px;
+    max-width: 1536px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+    padding: 96px 16px;
+
+    background: #F8F9FA;
+    opacity: 1;
+}
+
+/* DESTINATION HEADING CONTAINER */
+
+.destination-container {
+    width: 358px;
+    height: 88px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    opacity: 1;
+}
+
+.destination-subheading-container {
+    width: 358px;
+    height: 48px;
+    max-width: 672px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.destination-subheading-container p {
+    width: 352.2px;
+    height: 48px;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    color: #404850;
+}
+
+/* HEADING 2 */
+
+.destination-heading {
+    width: 358px;
+    height: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.destination-heading h2 {
+    width: 167.22px;
+    height: 24px;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+
+    color: #023E8A;
+}
+
+/* DESTINATION GRID */
+
+.destination-grid {
+    width: 358px;
+    height: 1996px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 475px);
+    gap: 24px;
+
+    opacity: 1;
+}
+
+/* DESTINATION CARD */
+
+.destination-card {
+    width: 358px;
+    height: 475px;
+
+    background: #FFFFFF;
+    border: 1px solid #E7E8E9;
+    border-radius: 12px;
+
+    overflow: hidden;
+    opacity: 1;
+}
+
+/* CARD IMAGE CONTAINER */
+
+.destination-image-container {
+    position: relative;
+
+    width: 356px;
+    height: 267px;
+
+    overflow: hidden;
+    opacity: 1;
+}
+
+/* CARD IMAGE */
+
+.destination-image-container img {
+    width: 356px;
+    height: 267px;
+
+    display: block;
+    object-fit: cover;
+}
+
+/* PRICE BADGE */
+
+
+.price-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    left: auto;
+
+    width: 113px;
+    height: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 4px 12px;
+    border-radius: 9999px;
+
+    background: #E9C46A;
+    box-shadow: 0px 1px 2px 0px #0000000D;
+}
+
+
+.price-badge span {
+    width: 89px;
+    height: 14px;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.7px;
+
+    color: #773E00;
+    white-space: nowrap;
+}
+
+/* CARD CONTENT */
+
+.destination-card-content {
+    width: 356px;
+    height: 206px;
+
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    opacity: 1;
+}
+
+/* CARD TITLE */
+
+.destination-title-container {
+    width: 308px;
+    height: 48px;
+
+    padding-bottom: 8px;
+}
+
+.destination-title-container h3 {
+    width: 308px;
+    height: 40px;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 39.2px;
+    letter-spacing: 0px;
+
+    color: #0077B6;
+}
+
+/* CARD DESCRIPTION */
+
+.destination-description-container {
+    width: 308px;
+    height: 72px;
+
+    padding-bottom: 24px;
+}
+
+.destination-description-container p {
+    width: 308px;
+    height: 48px;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+
+    color: #404850;
+}
+
+/* LEARN MORE BUTTON */
+
+.destination-button {
+    width: 308px;
+    height: 38px;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #E9C46A;
+    cursor: pointer;
+}
+
+.destination-button span {
+    width: 81.91px;
+    height: 14px;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.7px;
+    text-align: center;
+
+    color: #773E00;
+}
+
+
+/* ABOUT SECTION */
+.about-section {
+    width: 390px;
+    height: 636px;
+    padding: 96px 16px;
+    background: #F3F4F5;
+    opacity: 1;
+}
+
+.about-container {
+    width: 358px;
+    height: 444px;
+    max-width: 896px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    opacity: 1;
+}
+
+/* ABOUT HEADING */
+.about-heading-container {
+    width: 358px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-heading-container h2 {
+    width: 69.03px;
+    height: 24px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: center;
+    vertical-align: middle;
+    color: #023E8A;
+}
+
+/* ABOUT CARD */
+.about-card {
+    position: relative;
+    width: 358px;
+    height: 388px;
+    padding: 32px;
+    border: 1px solid #EDEEEF;
+    border-radius: 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px 0px #0000000D;
+    overflow: hidden;
+    opacity: 1;
+}
+
+/* DECORATIVE BACKGROUND */
+.about-decoration {
+    position: absolute;
+    width: 256px;
+    height: 256px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 9999px;
+    background: #CDE5FF;
+    opacity: 0.3;
+    filter: blur(64px);
+    pointer-events: none;
+}
+
+/* ABOUT TEXT */
+.about-text-container {
+    position: relative;
+    z-index: 1;
+    width: 292px;
+    height: 322px;
+    opacity: 1;
+}
+
+.about-text-container p {
+    width: 289.55px;
+    height: 322px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29.25px;
+    letter-spacing: 0;
+    text-align: center;
+    vertical-align: middle;
+    color: #404850;
+}
+
+
+/* FOOTER */
+.footer {
+    width: 390px;
+    height: 279px;
+    border-top: 1px solid #EDEEEF;
+    background: #FFFFFF;
+    opacity: 1;
+}
+
+.footer-container {
+    width: 390px;
+    height: 278px;
+    max-width: 1536px;
+    padding: 48px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 1;
+}
+
+/* FOOTER LOGO */
+.footer-logo-container {
+    width: 156.33px;
+    height: 40px;
+    opacity: 0.8;
+}
+
+.footer-logo {
+    width: 156.33px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 102px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 39.2px;
+    letter-spacing: 0;
+    color: #023E8A;
+    text-decoration: none;
+}
+
+/* FOOTER NAV */
+.footer-nav {
+    width: 358px;
+    height: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: space-between;
+    column-gap: 24px;
+    row-gap: 24px;
+}
+
+.footer-link {
+    height: 24px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #404850;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.footer-link:nth-child(1) {
+    transform: translate(40px ,48px);
+}
+
+.footer-link:nth-child(2) {
+    transform: translate(40px ,48px);
+}
+
+.footer-link:nth-child(3) {
+      transform: translate(-52px ,0.5px);
+}
+
+.footer-link:nth-child(4) {
+    transform: translate(-200px ,-47px);
+    
+    
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom-container {
+    width: 358px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    opacity: 1;
+}
+
+/* COPYRIGHT */
+.footer-copyright-container {
+    width: 358px;
+    height: 48px;
+    padding-right: 33.97px;
+}
+
+.footer-copyright {
+    width: 324.03px;
+    height: 48px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #404850;
+}
+
+/* BACK TO TOP */
+.back-to-top {
+    width: 99.79px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    gap: 3.99px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.7px;
+    color: #005D90;
+    text-decoration: none;
+}
+
+.back-to-top span {
+    width: 86.47px;
+    height: 14px;
+}
+
+.back-to-top-icon {
+    width: 9.33px;
+    height: 9.33px;
+    flex-shrink: 0;
+}
+.destination-card:nth-child(2) .price-badge {
+    right: 4px;
+}
+/* Tokyo City button alignment */
+.destination-card:nth-child(4) .destination-button {
+    transform: translateY(25px);
+}
+
